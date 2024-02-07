@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Permanent Marker', 'Love Ya Like A Sister', cursive;
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-around; */
+}
+
+#form-wrapper {
+    width: calc(50%);
+}
+.fa-user-secret {
+    font-size: 12rem;
+}
+#dynamic-form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main {
+    width: calc(50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    right: 1rem;
+}
+
+canvas {
+    
+}
+
+label {
+    display: block;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Form Play</title>
+    <script type="text/javascript">
+
+
+        function go(dom) {
+            console.log(dom.value);
+            if (dom.value != 'none') {
+                window.location = dom.value;
+            }
+        }
+
+        function choose() {
+            // go through the radios 
+            let len = document.getElementsByName('color').length;
+            for (let i = 0; i < len; i++) {
+                if (document.getElementsByName('color')[i].checked) {
+                    document.getElementById('target').value =
+                        document.getElementsByTagName('color')[i].value;
+
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form id="myForm" action="page.php" method="get">
+        <select onchange="go(this)">
+            <option value="none">
+                --Select page--
+            </option>
+            <option value="http://www.microsoft.com">
+                Microsoft
+            </option>
+            <option value="http://search.yahoo.com">
+                Yahoo
+            </option>
+            <option value="http://www.w3schools.com">
+                W3Schools
+            </option>
+        </select>
+        <hr />
+        <p>Which did you choose?<br />
+            <label for="r"><input type="radio" value="red" id="r" name="color" /> Red</label><br />
+            <label for="g"><input type="radio" value="green" id="g" name="color" /> Green</label><br />
+            <label for="b"><input type="radio" value="blue" id="b" name="color" /> Blue</label><br />
+            <input type="button" value="Color choice" onclick="choose()" />
+        </p>
+        <p>Your favorite color is: <input type="text" name="favorite" value="" /></p>
+    </form>
+</body>
+
+</html>

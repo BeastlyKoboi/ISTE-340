@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function val() {
+            // Validate Input
+            let returnBool = true;
+
+            if (document.getElementById('fn').value == '') {
+                document.getElementById('fn').style.backgroundColor = "pink";
+                returnBool = false;
+            }
+            if (document.getElementById('ln').value == '') {
+                document.getElementById('ln').style.backgroundColor = "pink";
+                returnBool = false;
+            }
+
+            return returnBool;
+        }
+    </script>
+</head>
+
+<body>
+    <form action="page.php" method="get" onsubmit="return val()">
+        First: <input type="text" name="fname" id="fn" placeholder="Put first name here"><br>
+        Last: <input type="text" name="lname" id="ln" placeholder="Put last name here"><br>
+        <input type="submit" value="go">
+    </form>
+</body>
+
+</html>
+<!-- 
+page.php?fname=Allan&lname=Flores
+
+$_GET['fname']
+ -->

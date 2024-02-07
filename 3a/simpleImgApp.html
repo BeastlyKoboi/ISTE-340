@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Think like an App...</title>
+    <style type="text/css">
+        #bigPlace {
+            position: absolute;
+            top: 115px;
+            left: 22px;
+        }
+
+        body {
+            background: #999966;
+        }
+
+        .table {
+            position: absolute;
+            left: 10px;
+            top: 380px;
+            z-index: 70;
+            padding: 3px;
+            border-bottom-width: 3px;
+            border-left-width: 3px;
+            border-right-width: 3px;
+            border-top-width: 3px;
+            border-style: outset;
+            border-color: #336699;
+        }
+    </style>
+    <script>
+
+        // preload images not on page yet...
+        let imgArr = []; // array to hold my big images
+
+
+
+        function init(howMany) {
+            for (let i = 0, len = howMany; i < len; i++) {
+                imgArr[i] = new Image();
+                imgArr[i].src = `media/gal${i + 1}Big.jpg`;
+
+            }
+        }
+
+        function changeImg(node) {
+            
+            // get the start
+            let start = node.src.lastIndexOf('/gal') + 4;
+            let end = node.src.lastIndexOf('.jpg');
+            
+            let num = node.src.substring(start, end);
+            
+            document.querySelector('#bigPic').src = imgArr[num - 1].src;
+
+            console.log(num);
+        }
+
+
+
+    </script>
+</head>
+
+<body onload="init(document.querySelector('#loader').querySelectorAll('img').length)">
+    <!--Big Pics-->
+    <div id="bigPlace">
+        <img src="media/gal1Big.jpg" name="bigPic" alt="big pics!" id="bigPic" />
+    </div><!--div holding all of the thumbs-->
+    <div class="table">
+        <div id="loader" style="height:90px; width:400px; overflow:auto; white-space: nowrap;">
+            <img src="media/gal1.jpg" data-num="1" onmouseover="changeImg(this)" border="0" onmouseover="this.style.cursor='pointer';" alt="image" />
+            <img src="media/gal2.jpg" data-num="2" onmouseover="changeImg(this)" border="0" onmouseover="this.style.cursor='pointer';" alt="image" />
+            <img src="media/gal3.jpg" data-num="3" onmouseover="changeImg(this)" border="0" onmouseover="this.style.cursor='pointer';" alt="image" />
+            <img src="media/gal4.jpg" data-num="4" onmouseover="changeImg(this)" border="0" onmouseover="this.style.cursor='pointer';" alt="image" />
+            <img src="media/gal5.jpg" data-num="5" onmouseover="changeImg(this)" border="0" onmouseover="this.style.cursor='pointer';" alt="image" />
+            <img src="media/gal6.jpg" data-num="6" onmouseover="changeImg(this)" border="0" onmouseover="this.style.cursor='pointer';" alt="image" />
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        'use strict';
+        // stops stupid things...
+        // delete Object;
+
+        /// Scope Tests ///
+        console.log('test with let');
+        let x = 0;
+
+        const letTest = function () {
+            let x = 12;
+            console.log('in the funct: ', x);
+        }
+
+        console.log('from before the funct: ', x);
+
+        letTest();
+
+        console.log('from after the funct: ', x);
+
+        ////////////////////////////////////
+
+        // arrays and obj 
+        let myArr = ['peter', 'paul', 'mary'];
+        myArr[4] = 'dan';
+        // length is 5
+
+        var obj = {
+            name: ['dan', 'scott', 'bogaard'],
+            "job": ['rit', 'process'],
+            funct: function (x) { console.log(x); }
+        }
+
+        console.log(obj.name[1]);
+
+
+
+        if (!document.getElementById) {
+            // old ass browser - get rid of them
+            window.location = 'legacy.html';
+        }
+
+        let newWin;
+
+        function makeNew() {
+            newWin = window.open('', '', 'height=300, width=250, top=250, left=300');
+            // write to he new window - how?
+            // can only be modified if same domain
+            newWin.document.write('<h2>hello<>/h2');
+        }
+
+        function closeNew() {
+            newWin.close();
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" value="Create New Window" onclick="makeNew()"><br>
+        <input type="button" value="Close the New Window" onclick="closeNew()"><br>
+
+    </form>
+</body>
+
+</html>

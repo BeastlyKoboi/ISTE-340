@@ -1,0 +1,47 @@
+{
+    "map": [
+        ["null", "null", "null", "null"],
+        ["Back Window", "null", "null", "null"],
+        ["null", "null", "null", "Front Door"],
+        ["null", "null", "null", "null"]
+    ],
+
+    "initial": {
+        "name": "initial",
+        "prompt": {
+            "flavor": "Heist: ...",
+            "question": "Where do you enter from?",
+            "options": [
+                "Back Window",
+                "Front Door"
+            ]
+        }
+    },
+    "rooms": {
+        "Front Door": {
+            "name": "Front Door",
+            "type": "entry",
+            "prompt": {
+                "flavor": "More flavor",
+                "question": "Where do you go?"
+            }
+        },
+        "Back Window": {
+            "name": "Back Window",
+            "type": "entry",
+            "prompt": {
+                "flavor": "More flavor",
+                "question": "Where do you go?"
+            }
+        },
+        "null": {
+            "name": "",
+            "type": "empty",
+            "prompt": {
+                "flavor": "",
+                "question": ""
+            }
+        }
+    },
+    "events": {}
+}
