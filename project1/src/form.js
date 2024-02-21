@@ -9,7 +9,7 @@ const validateUniqueName = (name) => {
     return `${name}${takenNames[name]}`;
 };
 
-const createChoiceRadio = ({ name, flavor, question, options, callback }) => {
+const createChoiceRadio = ({ name, flavor, question, roomOptions, callback }) => {
 
     const choiceDiv = document.createElement('div');
 
@@ -24,7 +24,7 @@ const createChoiceRadio = ({ name, flavor, question, options, callback }) => {
 
     const inputName = validateUniqueName(name);
 
-    for (let i = 0; i < options.length; i++) {
+    for (let i = 0; i < roomOptions.length; i++) {
         const inputID = `${inputName}-${i}`;
 
         const label = document.createElement('label');
@@ -33,11 +33,13 @@ const createChoiceRadio = ({ name, flavor, question, options, callback }) => {
         radioBtn.setAttribute('type', "radio");
         radioBtn.setAttribute('id', inputID);
         radioBtn.setAttribute('name', inputName);
+        radioBtn.setAttribute('xIndex', roomOptions[i].xIndex);
+        radioBtn.setAttribute('yIndex', roomOptions[i].yIndex);
         radioBtn.onclick = callback;
 
         label.setAttribute('for', inputID);
 
-        label.innerText = options[i];
+        label.innerText = roomOptions[i].name;
         label.prepend(radioBtn);
 
         choiceDiv.appendChild(label);

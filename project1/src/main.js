@@ -21,7 +21,7 @@ for (const filename of sources) {
 
 let chosenData;
 let canvasWidth = 400;
-let canvasHeight = 600;
+let canvasHeight = 500;
 const formDiv = document.getElementById('dynamic-form');
 let roomsMap = [];
 let roomSize = 60;
@@ -50,7 +50,17 @@ const onChoice = (e) => {
     // if they exist, kill them
 
     //
+    let inputEl = e.target;
+    let x = parseInt(inputEl.getAttribute('xIndex'));
+    let y = parseInt(inputEl.getAttribute('yIndex'));
+    let newRoom = roomsMap[y][x];
 
+    player.x = newRoom.xPos; 
+    player.y = newRoom.yPos;
+
+    // Check for and compile existing adjacent rooms
+
+    // Call create choice radio with new values
 }
 
 const init = (e) => {
@@ -59,12 +69,13 @@ const init = (e) => {
     }
 
     // Remove every child after the title of the story 
-    while (e.target.parentNode.lastElementChild.nodeName != 'H1'){
+    while (e.target.parentNode.lastElementChild.nodeName != 'H1') {
         e.target.parentNode.removeChild(e.target.parentNode.lastElementChild);
     }
 
     // reset map
     roomsMap = [];
+    let entryRooms = [];
     let mapWidth = chosenData.map[0].length * roomSize;
     let mapHeight = chosenData.map.length * roomSize;
 
@@ -86,6 +97,9 @@ const init = (e) => {
                 type: roomJSON.type,
                 prompt: roomJSON.prompt,
             }));
+
+            if (roomRow[x].type == 'entry')
+                entryRooms.push(roomRow[x]);
         }
         roomsMap.push(roomRow);
     }
@@ -101,7 +115,7 @@ const init = (e) => {
         name: "initial",
         flavor: chosenData['initial'].prompt.flavor,
         question: chosenData['initial'].prompt.question,
-        options: chosenData['initial'].prompt.options,
+        roomOptions: entryRooms,
         callback: onChoice,
     }));
 
