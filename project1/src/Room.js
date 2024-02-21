@@ -1,8 +1,10 @@
 export default class Room {
-    constructor(x, y, length, { name, type, prompt }) {
+    constructor({xIndex, yIndex, xPos, yPos, length, name, type, prompt }) {
         const types = ["entry", "empty", "full"];
-        this.x = x;
-        this.y = y;
+        this.xIndex = xIndex;
+        this.yIndex = yIndex;
+        this.xPos = xPos;
+        this.yPos = yPos;
         this.length = length;
         this.name = name;
         this.type = type;
@@ -19,13 +21,13 @@ export default class Room {
 
         }
         p5.stroke("black");
-        p5.square(this.x, this.y, this.length, 10);
+        p5.square(this.xPos, this.yPos, this.length, 10);
 
         p5.noStroke();
-        p5.rect(this.x, this.y, this.length + 2, 10);
-        p5.rect(this.x, this.y, 10, this.length + 2);
+        p5.rect(this.xPos, this.yPos, this.length + 2, 10);
+        p5.rect(this.xPos, this.yPos, 10, this.length + 2);
 
         p5.fill("black");
-        p5.text(this.name, this.x, this.y, this.length);
+        p5.text(this.name, this.xPos, this.yPos, this.length);
     }
 }

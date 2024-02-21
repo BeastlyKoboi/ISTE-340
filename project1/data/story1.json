@@ -1,6 +1,8 @@
 {
     "css": "path",
 
+    "Title": "Stop the Laser Diamond!",
+
     "map": [
         ["null", "null", "null", "null"],
         ["Back Window", "null", "null", "null"],
@@ -11,7 +13,7 @@
     "initial": {
         "name": "initial",
         "prompt": {
-            "flavor": "Heist: ...",
+            "flavor": "Your mission, should you choose to accept it, is to infiltrate the enemy's lair and steal back the whitfield diamond. They intend to make a moon exploding laser with it as its focal lens. Remove the threat and return the diamond. IT BELONGS IT A MUSEUM!",
             "question": "Where do you enter from?",
             "options": [
                 "Back Window",

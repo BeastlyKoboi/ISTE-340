@@ -9,11 +9,15 @@ const validateUniqueName = (name) => {
     return `${name}${takenNames[name]}`;
 };
 
-const createChoiceRadio = ({ name, question, options, callback }) => {
+const createChoiceRadio = ({ name, flavor, question, options, callback }) => {
 
     const choiceDiv = document.createElement('div');
 
-    const h3 = document.createElement('h3');
+    const flavorText = document.createElement('p');
+    flavorText.innerText = flavor;
+    choiceDiv.appendChild(flavorText);
+
+    const h3 = document.createElement('p');
     // h3.nodeValue = question;
     h3.innerText = question;
     choiceDiv.appendChild(h3);

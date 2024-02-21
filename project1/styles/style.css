@@ -10,6 +10,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 30px;
+    background-color: black;
 }
 
 #wrapper {
@@ -19,11 +20,27 @@ body {
 
 .fa-user-secret {
     font-size: 12rem;
+    margin: 1rem;
+    animation: circleScale 2s ease-in-out infinite;
 }
+@keyframes circleScale {
+    0% {transform: scale(.8)  }
+    50% { transform: scale(1) }
+  100% { transform: scale(.8) }
+}
+
 #dynamic-form {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+}
+
+p {
+    margin: 1rem;
+}
+label {
+    display: block;
+    margin: 0 1rem;
 }
 
 main {
@@ -33,13 +50,10 @@ main {
     right: 1rem;
 }
 
-label {
-    display: block;
-}
 
-@media screen and (min-width: 800px)  {
+@media screen and (min-width: 850px) {
     .banner-h1 {
-        border: 5px solid;
+        border: 5px dashed;
         font-size: 45px;
     }
 
@@ -48,26 +62,22 @@ label {
         flex-flow: row nowrap;
         /* justify-content: space-around; */
     }
-    
+
     #form-wrapper {
         width: calc(50%);
     }
+
     .fa-user-secret {
         font-size: 12rem;
     }
-    #dynamic-form {
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-    
+
     main {
         width: calc(50%);
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        position:fixed;
+        position: fixed;
         right: 1rem;
     }
 }
