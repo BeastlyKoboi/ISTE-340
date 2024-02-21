@@ -1,4 +1,6 @@
 {
+    "css": "path",
+
     "map": [
         ["null", "null", "null", "null"],
         ["Back Window", "null", "null", "null"],

@@ -1,18 +1,22 @@
 body {
     background-color: black;
     color: white;
-    font-family: 'Permanent Marker', 'Love Ya Like A Sister', cursive;
+    /* font-family: 'Permanent Marker', 'Love Ya Like A Sister', cursive; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.banner-h1 {
+    border: 5px solid;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 30px;
 }
 
 #wrapper {
     display: flex;
-    flex-flow: row nowrap;
-    /* justify-content: space-around; */
+    flex-flow: column nowrap;
 }
 
-#form-wrapper {
-    width: calc(50%);
-}
 .fa-user-secret {
     font-size: 12rem;
 }
@@ -23,19 +27,47 @@ body {
 }
 
 main {
-    width: calc(50%);
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position:fixed;
     right: 1rem;
-}
-
-canvas {
-    
 }
 
 label {
     display: block;
+}
+
+@media screen and (min-width: 800px)  {
+    .banner-h1 {
+        border: 5px solid;
+        font-size: 45px;
+    }
+
+    #wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        /* justify-content: space-around; */
+    }
+    
+    #form-wrapper {
+        width: calc(50%);
+    }
+    .fa-user-secret {
+        font-size: 12rem;
+    }
+    #dynamic-form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+    main {
+        width: calc(50%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:fixed;
+        right: 1rem;
+    }
 }

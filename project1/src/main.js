@@ -1,5 +1,6 @@
 
 
+import Banner from "./Banner.js";
 import Player from "./Player.js";
 import Room from "./Room.js";
 import * as form from "./form.js";
@@ -8,12 +9,15 @@ let data = await fetch("data/story1.json").then((response) => {
     return response.json();
 });
 let sketch;
+let canvasWidth = 400;
+let canvasHeight = 600;
 const formDiv = document.getElementById('dynamic-form');
 let timePassed = 0;
 let roomData = data.map;
 let roomsMap = [];
 let roomSize = 60;
 let player;
+let banner;
 
 // "map": [
 //     ["", "", "", ""],
@@ -26,8 +30,8 @@ const init = () => {
     let mapWidth = roomData[0].length * roomSize;
     let mapHeight = roomData.length * roomSize;
 
-    let widthOffset = sketch.width / 2 - mapWidth / 2 + roomSize / 2;
-    let heightOffset = sketch.height / 2 - mapHeight / 2 + roomSize / 2;
+    let widthOffset = canvasWidth / 2 - mapWidth / 2 + roomSize / 2;
+    let heightOffset = canvasHeight / 2 - mapHeight / 2 + roomSize / 2;
 
     for (let y = 0; y < roomData.length; y++) {
         let roomRow = [];
@@ -40,7 +44,7 @@ const init = () => {
     }
 
     player = new Player({
-        x: sketch.width / 2,
+        x: canvasWidth / 2,
         y: 25,
         radius: 15,
         blinkSpeed: 1,
@@ -50,12 +54,23 @@ const init = () => {
         name: "initial",
         question: data['initial'].prompt.question,
         options: data['initial'].prompt.options,
+        callback: onChoice,
     }));
 
+    banner = new Banner({
+        text: 'Mission Accepted',
+        moveSpeed: 1000,
+        colorSpeed: 50,
+        pausedDur: 1.5,
+        startColor: { h: 51, s: 100, l: 100 },
+        endColor: { h: 51, s: 100, l: 50 },
+    });
 };
+
 
 const onChoice = (e) => {
     //
+    console.log('I was clicked', e.target);
     // while (this.parentNode != this.parentNode.lastChild) kill last child;
 
     // first check for nodes after this choice, 
@@ -68,7 +83,7 @@ const onChoice = (e) => {
 sketch = new p5((p5) => {
 
     p5.setup = () => {
-        p5.createCanvas(400, 600);
+        p5.createCanvas(canvasWidth, canvasHeight);
         p5.textAlign(p5.CENTER, p5.CENTER);
         p5.rectMode(p5.CENTER)
     }

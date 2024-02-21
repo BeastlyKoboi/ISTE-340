@@ -9,7 +9,7 @@ const validateUniqueName = (name) => {
     return `${name}${takenNames[name]}`;
 };
 
-const createChoiceRadio = ({ name, question, options }) => {
+const createChoiceRadio = ({ name, question, options, callback }) => {
 
     const choiceDiv = document.createElement('div');
 
@@ -29,6 +29,7 @@ const createChoiceRadio = ({ name, question, options }) => {
         radioBtn.setAttribute('type', "radio");
         radioBtn.setAttribute('id', inputID);
         radioBtn.setAttribute('name', inputName);
+        radioBtn.onclick = callback;
 
         label.setAttribute('for', inputID);
 
@@ -41,12 +42,12 @@ const createChoiceRadio = ({ name, question, options }) => {
     }
     return choiceDiv;
 
-    // <p>Which did you choose?<br>
-    //     <label for="r"><input type="radio" value="red" id="r" name="color"> Red</label><br>
-    //         <label for="g"><input type="radio" value="green" id="g" name="color"> Green</label><br>
-    //             <label for="b"><input type="radio" value="blue" id="b" name="color"> Blue</label><br>
-    //                 <input type="button" value="Color choice" onclick="choose()">
-    //                 </p>
+    //  <p>Which did you choose?<br>
+    //      <label for="r"><input type="radio" value="red" id="r" name="color"> Red</label><br>
+    //      <label for="g"><input type="radio" value="green" id="g" name="color"> Green</label><br>
+    //      <label for="b"><input type="radio" value="blue" id="b" name="color"> Blue</label><br>
+    //      <input type="button" value="Color choice" onclick="choose()">
+    //  </p>
 
 };
 
