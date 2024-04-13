@@ -1,5 +1,6 @@
 let takenNames = {};
 
+// Used to ensure labels are not made with intersecting names
 const validateUniqueName = (name) => {
     if (takenNames[name]) {
         takenNames[name]++;
@@ -9,21 +10,30 @@ const validateUniqueName = (name) => {
     return `${name}${takenNames[name]}`;
 };
 
-const createChoiceRadio = ({ name, flavor, question, roomOptions, callback }) => {
+// Creates a div with a flavor text, a prompt, and radio buttons. 
+const createChoiceRadio = ({ name, firstTimeFlavor, roomFlavor, question, roomOptions, callback }) => {
 
     const choiceDiv = document.createElement('div');
+    choiceDiv.classList.add('form-choice')
+
+    // used as an additional option to add text separate from main
+    if (firstTimeFlavor) {
+        const firstTimeFlavorText = document.createElement('p');
+        firstTimeFlavorText.appendChild(document.createTextNode(firstTimeFlavor));
+        choiceDiv.appendChild(firstTimeFlavorText);
+    }
 
     const flavorText = document.createElement('p');
-    flavorText.innerText = flavor;
+    flavorText.appendChild(document.createTextNode(roomFlavor));
     choiceDiv.appendChild(flavorText);
 
     const h3 = document.createElement('p');
-    // h3.nodeValue = question;
-    h3.innerText = question;
+    h3.appendChild(document.createTextNode(question));
     choiceDiv.appendChild(h3);
 
     const inputName = validateUniqueName(name);
 
+    // Create A radio button for each given room option
     for (let i = 0; i < roomOptions.length; i++) {
         const inputID = `${inputName}-${i}`;
 
@@ -39,25 +49,17 @@ const createChoiceRadio = ({ name, flavor, question, roomOptions, callback }) =>
 
         label.setAttribute('for', inputID);
 
-        label.innerText = roomOptions[i].name;
+        label.appendChild(document.createTextNode(roomOptions[i].name));
         label.prepend(radioBtn);
 
         choiceDiv.appendChild(label);
-
-        // add onclick stuff
     }
+
+    choiceDiv.appendChild(document.createElement('hr'));
+
     return choiceDiv;
-
-    //  <p>Which did you choose?<br>
-    //      <label for="r"><input type="radio" value="red" id="r" name="color"> Red</label><br>
-    //      <label for="g"><input type="radio" value="green" id="g" name="color"> Green</label><br>
-    //      <label for="b"><input type="radio" value="blue" id="b" name="color"> Blue</label><br>
-    //      <input type="button" value="Color choice" onclick="choose()">
-    //  </p>
-
 };
 
 export {
     createChoiceRadio,
-
 }

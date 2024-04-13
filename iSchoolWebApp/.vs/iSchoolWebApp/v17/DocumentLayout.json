@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\ischoolwebapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\ischoolwebapp\\services\\dataretrieval.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|solutionrelative:services\\dataretrieval.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\ischoolwebapp\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\ischoolwebapp\\ischoolwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|solutionrelative:ischoolwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\ischoolwebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\ischoolwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED06C0C3-C3B3-4944-8365-C7B33643875F}|iSchoolWebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataRetrieval.cs",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Services\\DataRetrieval.cs",
+              "RelativeDocumentMoniker": "Services\\DataRetrieval.cs",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Services\\DataRetrieval.cs",
+              "RelativeToolTip": "Services\\DataRetrieval.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T14:06:51.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "iSchoolWebApp",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\iSchoolWebApp.csproj",
+              "RelativeDocumentMoniker": "iSchoolWebApp.csproj",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\iSchoolWebApp.csproj",
+              "RelativeToolTip": "iSchoolWebApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-11T14:04:42.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T13:54:26.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwCEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T13:54:12.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-11T13:51:09.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\iSchoolWebApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T13:49:14.439Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

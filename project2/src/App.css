@@ -1,0 +1,56 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* semantic UI messes up with the css - so I'm adding this now */
+body {
+  display: block !important;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 0 3vw 3vw;
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* .sticky {
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 999;
+} */
+
+.sticky>h1 {
+  /* margin: 0px; */
+}
+
+.About {
+  width: 85vw;
+  margin-left: 7vw;
+  scroll-margin-top: 10rem;
+
+}
+
+.About>h1{
+  margin: 0px;
+}
+/* 
+h1 {
+  margin: 0 1rem;
+} */
+
+#degrees-section {
+  scroll-margin-top: 67px;
+
+}

@@ -1,8 +1,32 @@
 body {
     background-color: black;
     color: white;
-    /* font-family: 'Permanent Marker', 'Love Ya Like A Sister', cursive; */
     font-family: 'Courier New', Courier, monospace;
+}
+
+.fa-user-secret {
+    font-size: 12rem;
+    margin: 1rem;
+    animation: circleScale 2s ease-in-out infinite;
+}
+
+@keyframes circleScale {
+    0% {
+        transform: scale(.8)
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(.8)
+    }
+}
+
+#wrapper {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .banner-h1 {
@@ -13,31 +37,31 @@ body {
     background-color: black;
 }
 
-#wrapper {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.fa-user-secret {
-    font-size: 12rem;
-    margin: 1rem;
-    animation: circleScale 2s ease-in-out infinite;
-}
-@keyframes circleScale {
-    0% {transform: scale(.8)  }
-    50% { transform: scale(1) }
-  100% { transform: scale(.8) }
-}
-
 #dynamic-form {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
+h3 {
+    text-align: center;
+}
+select,button {
+    background-color: white;
+    margin: 0 0 1rem;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-choice {
+    width: 90%;
+    max-width: 600px;
+}
+
 p {
     margin: 1rem;
 }
+
 label {
     display: block;
     margin: 0 1rem;
@@ -60,7 +84,6 @@ main {
     #wrapper {
         display: flex;
         flex-flow: row nowrap;
-        /* justify-content: space-around; */
     }
 
     #form-wrapper {
@@ -79,5 +102,6 @@ main {
         align-items: center;
         position: fixed;
         right: 1rem;
+
     }
 }

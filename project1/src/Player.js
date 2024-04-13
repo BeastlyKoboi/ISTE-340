@@ -1,3 +1,4 @@
+// Meant to visualize the player position and animate the blinking light
 export default class Player {
     constructor({ x, y, radius, blinkSpeed, }) {
         this.x = x;
@@ -10,6 +11,7 @@ export default class Player {
     draw(p5) {
         this.alpha += this.blinkSpeed * p5.deltaTime;
 
+        // Ricochets between full and no opacity.
         if (this.alpha > 255) {
             this.alpha = 255;
             this.blinkSpeed = -this.blinkSpeed;

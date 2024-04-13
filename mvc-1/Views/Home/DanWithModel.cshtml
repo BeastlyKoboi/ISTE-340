@@ -1,0 +1,15 @@
+﻿@model mvc_1.Models.DanWithModel;
+
+@{
+    ViewData["Title"] = Model.PageTitle;
+}
+
+<h1>@Model.Title</h1>
+<p>@Model.Description</p>
+
+<ul>
+    @for (int i = 0; i < Model.HowMany; i++)
+    {
+        <li>Number: @i</li>
+    }
+</ul>

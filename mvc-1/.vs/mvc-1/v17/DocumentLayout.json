@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\mvc-1\\views\\home\\danwithmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|solutionrelative:views\\home\\danwithmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\mvc-1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\mvc-1\\views\\home\\dannodata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|solutionrelative:views\\home\\dannodata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\mvc-1\\models\\danwithmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|solutionrelative:models\\danwithmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\mvc-1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\mvc-1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\mvc-1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|c:\\users\\itsal\\documents\\github\\iste-340\\mvc-1\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AD2378D-FA41-4B4D-AD33-48D4A12B8A78}|mvc-1.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DanWithModel.cshtml",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Home\\DanWithModel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\DanWithModel.cshtml",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Home\\DanWithModel.cshtml",
+              "RelativeToolTip": "Views\\Home\\DanWithModel.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T14:30:31.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DanWithModel.cs",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Models\\DanWithModel.cs",
+              "RelativeDocumentMoniker": "Models\\DanWithModel.cs",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Models\\DanWithModel.cs",
+              "RelativeToolTip": "Models\\DanWithModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T14:19:05.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DanNoData.cshtml",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Home\\DanNoData.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\DanNoData.cshtml",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Home\\DanNoData.cshtml",
+              "RelativeToolTip": "Views\\Home\\DanNoData.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T14:10:33.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAB+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T14:00:21.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T14:00:18.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T13:58:22.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T13:50:17.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\itsal\\Documents\\GitHub\\ISTE-340\\mvc-1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA3wB4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T13:44:32.933Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

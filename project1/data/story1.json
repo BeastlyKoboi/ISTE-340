@@ -4,37 +4,40 @@
     "Title": "Stop the Laser Diamond!",
 
     "map": [
-        ["null", "null", "null", "null"],
-        ["Back Window", "null", "null", "null"],
-        ["null", "null", "null", "Front Door"],
-        ["null", "null", "null", "null"]
+        ["null", "null", "null", "Storage", "Storage"],
+        ["Hallway Skylight", "Break Room", "Gift Shop (Telescopes)", "Gift Shop (Trinkets)", "Gift Shop (Toys)"],
+        ["Indoor Statue", "Goons", "The Dome", "Goons", "Front Entrance"],
+        ["Glass Garden", "Glass Garden", "Maintenance Room", "History Exhibit 2", "History Exhibit 1"],
+        ["null", "Weird Statue", "Amphitheater", "Fountain", "null"]
     ],
 
     "initial": {
         "name": "initial",
         "prompt": {
-            "flavor": "Your mission, should you choose to accept it, is to infiltrate the enemy's lair and steal back the whitfield diamond. They intend to make a moon exploding laser with it as its focal lens. Remove the threat and return the diamond. IT BELONGS IT A MUSEUM!",
+            "flavor": "Your mission, should you choose to accept it, is to infiltrate the enemy's lair and steal back the Whitfield diamond. They have taken over an old observatory and are close to completing their moon exploding laser using the diamond. The observatory is surrounded by electrified wire, which is impenetrable. The diamond should be inside the center dome. Find and return it. IT BELONGS IT A MUSEUM!",
             "question": "Where do you enter from?",
             "options": [
-                "Back Window",
-                "Front Door"
+                "Hallway Skylight",
+                "Front Entrance"
             ]
         }
     },
     "rooms": {
-        "Front Door": {
-            "name": "Front Door",
+        "Front Entrance": {
+            "name": "Front Entrance",
             "type": "entry",
             "prompt": {
-                "flavor": "More flavor",
+                "firstTimeFlavor": "You pick the lock of the front entrance and make your way inside the main lobby.",
+                "roomFlavor": "The lobby is pretty big, but plenty of places to hide.",
                 "question": "Where do you go?"
             }
         },
-        "Back Window": {
-            "name": "Back Window",
+        "Hallway Skylight": {
+            "name": "Hallway Skylight",
             "type": "entry",
             "prompt": {
-                "flavor": "More flavor",
+                "firstTimeFlavor": "You parachute onto the roof of the building, cutting a small hole in the glass skylight for you to squeeze through.",
+                "roomFlavor": "The hallway is barely a hallway and you have a feeling you should not stick around.",
                 "question": "Where do you go?"
             }
         },
@@ -42,10 +45,145 @@
             "name": "",
             "type": "empty",
             "prompt": {
-                "flavor": "",
+                "firstTimeFlavor": "",
+                "roomFlavor": "",
+                "question": "Where do you go?"
+            }
+        },
+        "The Dome": {
+            "name": "The Dome",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": "You enter the place the mission briefing told you the diamond should be... and you do not find the diamond. You know that they intend to build it in a place with a clear view of the moon. Perhaps outside?",
+                "roomFlavor": "The dome has a large telescope that you probably should not point towards the sun.",
+                "question": "Where do you go?"
+            }
+        },
+        "Gift Shop (Toys)": {
+            "name": "Gift Shop (Toys)",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "This part of the gift shop is has way too many doll eyes, you gotta get out of here.",
+                "question": "Where do you go?"
+            }
+        },
+        "Gift Shop (Trinkets)": {
+            "name": "Gift Shop (Trinkets)",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "This part of the gift shop seems to have a lot of stuff a bit too dangerous for kids. Why are kids even alllowed to buy laser pens? You had to work for the government for mine.",
+                "question": "Where do you go?"
+            }
+        },
+        "Gift Shop (Telescopes)": {
+            "name": "Gift Shop (Telescopes)",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "This part of the gift shop just has a bunch of telescopes.",
+                "question": "Where do you go?"
+            }
+        },
+        "Storage": {
+            "name": "Storage",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "Just some boxes and dust. Too much dust honestly. This supervillain needs to manage his inventory better.",
+                "question": "Where do you go?"
+            }
+        },
+        "Goons": {
+            "name": "Goons (probably)",
+            "type": "end",
+            "prompt": {
+                "firstTimeFlavor": "As soon as you open the door twenty goons taze you until you pass out. Probably do not need to this, but mission failed. You should've gotten your bachelor's in fighting instead of spying.",
+                "roomFlavor": "",
                 "question": ""
             }
+        },
+        "Amphitheater": {
+            "name": "Outdoor Theater",
+            "type": "end",
+            "prompt": {
+                "firstTimeFlavor": "Seems like a good place to sit and see the stars. Apparently some goons thought the same, because when you came upon the top of the steps, you got tazed and fell down the full line of steps until you hit the center. Mission Failed.",
+                "roomFlavor": "",
+                "question": ""
+            }
+        }, 
+        "Indoor Statue": {
+            "name": "Indoor Statue",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "Does not seem very scientific to have a statue of a planet with a smiley face giving a thumbs up.",
+                "question": "Where do you go?"
+            }
+        },
+        "Weird Statue": {
+            "name": "Weird Statue",
+            "type": "end",
+            "prompt": {
+                "firstTimeFlavor": "This statue must be new. It is really tall, sleek, and has sheet metal skin with visible joints and an astronaut helmet. It has a ladder next to it leading to the head. Bit strange but seems fi... and it just grabbed you. Nobody said there would be a giant mech here. Mission Failed.",
+                "roomFlavor": "",
+                "question": ""
+            }
+        },
+        "Glass Garden": {
+            "name": "Glass Garden",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "A beautiful room. Maybe you should be a gardener when you retire.",
+                "question": "Where do you go?"
+            }
+        }, 
+        "Fountain": {
+            "name": "Fancy Fountain",
+            "type": "end",
+            "prompt": {
+                "firstTimeFlavor": "You gaze upon the lovely waters of this decadent fountain and see a sparkle. You look up to see a crystalline shimmer in the tip of the fountain pointing upwards. You realize it is the Whitfield diamond and grab it! You go backwards, exactly the way you came in and you are home free! Mission Accomplished!",
+                "roomFlavor": "",
+                "question": ""
+            }
+        },
+        "Break Room": {
+            "name": "Employee Break Room",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "The fridge was empty, smh.",
+                "question": "Where do you go?"
+            }
+        }, 
+        "History Exhibit 1": {
+            "name": "History Exhibit",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "An interactive exhibit where the planets magnetically jut out of the floor and rotate mimicing the process of the solar system. So was your childhood bad, or is this really cool?",
+                "question": "Where do you go?"
+            }
+        },
+        "History Exhibit 2": {
+            "name": "History Exhibit",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "You read a plaque that says apparently this place was made in... China?",
+                "question": "Where do you go?"
+            }
+        }, 
+        "Maintenance Room": {
+            "name": "Maintenance Room",
+            "type": "full",
+            "prompt": {
+                "firstTimeFlavor": null,
+                "roomFlavor": "a whole bunch of tubes, steam, whirring, and whooshing, that tells you to not touch anything in this room.",
+                "question": "Where do you go?"
+            }
         }
-    },
-    "events": {}
+    }
 }

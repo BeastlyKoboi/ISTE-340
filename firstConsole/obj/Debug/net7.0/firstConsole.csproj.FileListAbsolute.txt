@@ -1,0 +1,15 @@
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\bin\Debug\net7.0\firstConsole.exe
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\bin\Debug\net7.0\firstConsole.deps.json
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\bin\Debug\net7.0\firstConsole.runtimeconfig.json
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\bin\Debug\net7.0\firstConsole.dll
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\bin\Debug\net7.0\firstConsole.pdb
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\firstConsole.csproj.AssemblyReference.cache
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\firstConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\firstConsole.AssemblyInfoInputs.cache
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\firstConsole.AssemblyInfo.cs
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\firstConsole.csproj.CoreCompileInputs.cache
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\firstConsole.dll
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\refint\firstConsole.dll
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\firstConsole.pdb
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\firstConsole.genruntimeconfig.cache
+C:\Users\itsal\Documents\GitHub\ISTE-340\firstConsole\obj\Debug\net7.0\ref\firstConsole.dll
