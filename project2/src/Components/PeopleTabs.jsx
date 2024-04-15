@@ -16,7 +16,6 @@ const PeopleTabs = () => {
     React.useEffect(() => {
         getData('people/')
             .then((json) => {
-                console.log('people got', json);
                 setPepObj(json);
                 setLoaded(true);
             });

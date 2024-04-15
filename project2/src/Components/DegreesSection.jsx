@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import getData from '../utils/getData'
 
+// Components
 import Skeleton from '@mui/material/Skeleton';
 import Accordion from '@mui/material/Accordion';
 import AccordionActions from '@mui/material/AccordionActions';
@@ -8,18 +9,15 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 // import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const DegreesSection = ({id}) => {
-
+const DegreesSection = ({ id }) => {
     const [loaded, setLoaded] = useState(false);
     const [degreesObj, setDegreesObj] = useState();
 
     React.useEffect(() => {
         getData('degrees/')
             .then((json) => {
-                console.log('people got', json);
                 setDegreesObj(json);
                 setLoaded(true);
-                console.log(json);
             });
 
     }, []);
@@ -36,6 +34,10 @@ const DegreesSection = ({id}) => {
                 </AccordionSummary>
                 <AccordionDetails>
                     <p>{degree.description}</p>
+                    <p>Concentrations</p>
+                    {degree.concentrations.map((concentration) => [
+                        <p key={concentration}>{concentration}</p>
+                    ])}
                 </AccordionDetails>
             </Accordion>
         }
@@ -49,21 +51,21 @@ const DegreesSection = ({id}) => {
                     <h1>{degree.degreeName}</h1>
                 </AccordionSummary>
                 <AccordionDetails>
-                    {degree.availableCertificates.map((certificate) => {
-                        return <h2>{certificate}</h2>
-                    })}
+                    {degree.availableCertificates.map((certificate) => [
+                        <h2 key={certificate}>{certificate}</h2>
+                    ])}
                 </AccordionDetails>
             </Accordion>
         }
     }
 
     return loaded ? (
-        <>
         <div id={id}>
+            <h1>Graduate Degrees</h1>
             {degreesObj.graduate.map(showDegrees)}
+            <h1>Undergraduate Degrees</h1>
             {degreesObj.undergraduate.map(showDegrees)}
         </div>
-        </>
     ) : (
         <Skeleton animation='wave' variant="rectangular" height={100} />
     );

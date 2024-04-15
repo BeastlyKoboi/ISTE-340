@@ -2,9 +2,6 @@
 import React, { useState } from 'react'
 import getData from './utils/getData';
 
-// Import the css
-import './App.css'
-
 // Import the components
 import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
@@ -17,39 +14,26 @@ import AboutSection from './Components/AboutSection';
 import PeopleTabs from './Components/PeopleTabs';
 import PeopleModal from './Components/PeopleModal';
 import DegreesSection from './Components/DegreesSection';
+import MinorSection from './Components/MinorsSection';
+import EmploymentSection from './Components/EmploymentSection';
 
+// Import the css
+import './App.css'
 
 const App = () => {
   return (
     <>
-      {/* <AppBar position='sticky'>
-
-        <Toolbar sx={{
-          backgroundColor: '#F76902'
-        }} >
-
-          <h1>
-            <a href="#about-section">About</a>
-          </h1>
-          <h1>
-            <a href="#degrees-section">Degrees</a>
-          </h1>
-          <Typography variant='h3' component='div'>
-            <a href="#about-section">About</a>
-          </Typography>
-          <Typography variant='h3' component='div'>
-          <a href="#degrees-section">Degrees</a>
-          </Typography>
-
-        </Toolbar>
-
-      </AppBar> */}
-
       <div className='App'>
+
+        <h1>Golisano College of Computing and Information Sciences</h1>
         <AboutSection id='about-section' />
-        <hr />
+        <br />
         <DegreesSection id='degrees-section' />
-        <hr />
+        <br />
+        <MinorSection id='minors-section' />
+        <br />
+        <EmploymentSection id='employment-section' />
+        <br />
         <PeopleTabs />
         <hr />
         <PeopleModal />

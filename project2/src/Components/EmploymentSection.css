@@ -1,0 +1,38 @@
+#coop-table-sec,
+#employment-table-sec {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#employment-intro {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 25px;
+    justify-items: center;
+    justify-content: center;
+}
+
+#degree-statistics {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 25px;
+    justify-items: center;
+    justify-content: center;
+    
+}
+
+#degree-statistics h2 {
+    color: rgb(247, 105, 2);
+    font-size: 50px;
+}
+
+#employers-and-careers-lists {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 25px;
+    justify-items: center;
+    justify-content: center;
+}

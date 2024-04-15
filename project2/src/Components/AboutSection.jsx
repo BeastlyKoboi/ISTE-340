@@ -5,7 +5,7 @@ import getData from '../utils/getData';
 import Skeleton from '@mui/material/Skeleton';
 
 
-const AboutSection = ({id}) => {
+const AboutSection = ({ id }) => {
     // State
     const [loaded, setLoaded] = useState(false);
     const [aboutObj, setAboutObj] = useState();
@@ -14,7 +14,6 @@ const AboutSection = ({id}) => {
         // The page was just rendered, now get data!
         getData('about/')
             .then((json) => {
-                console.log(json);
                 setAboutObj(json);
                 setLoaded(true);
             });
@@ -31,16 +30,14 @@ const AboutSection = ({id}) => {
 
 
     return (
-        <>
-            <div id={id} className='About'>
-                <h2>{aboutObj.title}</h2>
-                <h3>{aboutObj.description}</h3>
-                <div className='aboutQuote'>
-                    <h4 className='quote'>{aboutObj.quote}</h4>
-                    <h4>--{aboutObj.quoteAuthor}</h4>
-                </div>
+        <div id={id} className='About'>
+            <h2>{aboutObj.title}</h2>
+            <h3>{aboutObj.description}</h3>
+            <div className='aboutQuote'>
+                <h4 className='quote'>{aboutObj.quote}</h4>
+                <h4>--{aboutObj.quoteAuthor}</h4>
             </div>
-        </>
+        </div>
     )
 }
 
